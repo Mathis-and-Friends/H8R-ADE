@@ -2,6 +2,7 @@ package com.mathis_n_friends.h8r_ade;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
@@ -10,10 +11,11 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+    }
 
-    // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+    /** Called when the user taps the Send button */
+    public void sendMessage(View view) {
+        // Do something in response to button
     }
 
     /**
